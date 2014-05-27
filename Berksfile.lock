@@ -40,7 +40,7 @@ DEPENDENCIES
     rel: site-cookbooks/odi-xml
   quirkafleeg-deployment
     git: git://github.com/theodi/chef-quirkafleeg-deployment.git
-    revision: 99582e91acde36631ee43468bb7bec1e0c634e9e
+    revision: 28db5cefea6f817b281681b15bcd9c087b890bfb
   rvm
     git: git://github.com/theodi/chef-rvm.git
     revision: 7ba48b5cf97f1bf32f5df30b7c263d745e652faf
