@@ -1,0 +1,7 @@
+{
+  "id": "databases",
+  "host": "localhost",
+  "root": {
+    "_default": ""
+  }
+}

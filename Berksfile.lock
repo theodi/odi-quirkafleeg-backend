@@ -1,0 +1,133 @@
+DEPENDENCIES
+  dictionary
+    git: git://github.com/theodi/chef-dictionary.git
+    revision: 1ea6ff5a5cf716f50f0bf428688e9e3916bff30d
+  envbuilder
+    git: git://github.com/theodi/chef-envbuilder.git
+    revision: 27252c8b85be41067ce364d62f9779855c5108b0
+  imagemagick
+    git: git://github.com/opscode-cookbooks/imagemagick.git
+    revision: 891a842ad71a8dadc5ec6ed4fa564493e71e2bce
+  odi-apt
+    git: git://github.com/theodi/odi-chef.git
+    revision: bb1f4e7aed83874a0decb07378324085fb83633c
+    rel: site-cookbooks/odi-apt
+  odi-nginx
+    git: git://github.com/theodi/chef-odi-nginx.git
+    revision: 9639887c7e53663e06efeeefc3deda2d398b206b
+  odi-pk
+    git: git://github.com/theodi/odi-chef.git
+    revision: bb1f4e7aed83874a0decb07378324085fb83633c
+    rel: site-cookbooks/odi-pk
+  odi-quirkafleeg-backend
+    path: .
+    metadata: true
+  odi-rvm
+    git: git://github.com/theodi/odi-chef.git
+    revision: bb1f4e7aed83874a0decb07378324085fb83633c
+    rel: site-cookbooks/odi-rvm
+  odi-statsd
+    git: git://github.com/theodi/odi-chef.git
+    revision: bb1f4e7aed83874a0decb07378324085fb83633c
+    rel: site-cookbooks/odi-statsd
+  odi-users
+    git: git://github.com/theodi/odi-chef.git
+    revision: bb1f4e7aed83874a0decb07378324085fb83633c
+    rel: site-cookbooks/odi-users
+  odi-xml
+    git: git://github.com/theodi/odi-chef.git
+    revision: bb1f4e7aed83874a0decb07378324085fb83633c
+    rel: site-cookbooks/odi-xml
+  quirkafleeg-deployment
+    git: git://github.com/theodi/chef-quirkafleeg-deployment.git
+    revision: 99582e91acde36631ee43468bb7bec1e0c634e9e
+  rvm
+    git: git://github.com/theodi/chef-rvm.git
+    revision: 7ba48b5cf97f1bf32f5df30b7c263d745e652faf
+
+GRAPH
+  apt (2.4.0)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
+  build-essential (2.0.2)
+  chef_handler (1.1.6)
+  dictionary (0.1.0)
+  dmg (2.2.0)
+  envbuilder (0.2.0)
+  fail2ban (2.1.2)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  git (4.0.2)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    runit (>= 1.0.0)
+    windows (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  imagemagick (0.2.2)
+  mysql (5.2.12)
+  nginx (2.7.0)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 2.0)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  nodejs (1.3.0)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    yum (>= 0.0.0)
+  ntp (1.6.2)
+  odi-apt (0.1.0)
+    apt (>= 0.0.0)
+  odi-nginx (0.5.0)
+  odi-pk (0.1.0)
+  odi-quirkafleeg-backend (0.1.0)
+    build-essential (>= 0.0.0)
+    dictionary (>= 0.0.0)
+    envbuilder (>= 0.0.0)
+    fail2ban (>= 0.0.0)
+    git (>= 0.0.0)
+    imagemagick (>= 0.0.0)
+    mysql (>= 0.0.0)
+    nodejs (>= 0.0.0)
+    ntp (>= 0.0.0)
+    odi-apt (>= 0.0.0)
+    odi-nginx (>= 0.0.0)
+    odi-pk (>= 0.0.0)
+    odi-rvm (>= 0.0.0)
+    odi-statsd (>= 0.0.0)
+    odi-users (>= 0.0.0)
+    postfix (>= 0.0.0)
+    quirkafleeg-deployment (>= 0.0.0)
+  odi-rvm (0.2.1)
+    odi-xml (>= 0.0.0)
+    rvm (>= 0.0.0)
+    xslt (>= 0.0.0)
+  odi-statsd (0.1.0)
+    statsd (>= 0.0.0)
+  odi-users (0.2.0)
+  odi-xml (0.1.0)
+    xml (>= 0.0.0)
+  ohai (2.0.0)
+  postfix (3.2.0)
+  quirkafleeg-deployment (0.3.0)
+    git (>= 0.0.0)
+    nginx (>= 0.0.0)
+  rsyslog (1.12.2)
+  runit (1.5.10)
+    build-essential (>= 0.0.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
+  rvm (0.0.2)
+  statsd (0.0.1)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
+  windows (1.31.0)
+    chef_handler (>= 0.0.0)
+  xml (1.2.4)
+    build-essential (>= 0.0.0)
+  xslt (0.0.1)
+  yum (3.2.0)
+  yum-epel (0.3.6)
+    yum (~> 3.0)
