@@ -14,3 +14,9 @@ default.databags.primary = 'quirkafleeg'
 default.apps.static.port = 4010
 default.apps.static.assets_path = 'static'
 default.apps.static.assets_allow_origin = "*"
+
+default.apps.signonotron2.port = 4000
+default.apps.signonotron2.deploy_name = 'signon'
+default.apps.signonotron2.mysql_db = 'signon'
+default.apps.signonotron2.migrate = 'bundle exec rake db:migrate'
+default.apps.signonotron2.is_default = true
