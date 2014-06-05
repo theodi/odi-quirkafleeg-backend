@@ -16,7 +16,9 @@ DEPENDENCIES
     revision: bb1f4e7aed83874a0decb07378324085fb83633c
     rel: site-cookbooks/odi-apt
   odi-mongodb
-    path: ../odi-chef/site-cookbooks/odi-mongodb
+    git: git://github.com/theodi/odi-chef.git
+    revision: bb1f4e7aed83874a0decb07378324085fb83633c
+    rel: site-cookbooks/odi-mongodb
   odi-nginx
     git: git://github.com/theodi/chef-odi-nginx.git
     revision: 9639887c7e53663e06efeeefc3deda2d398b206b

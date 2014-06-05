@@ -18,5 +18,5 @@ cookbook 'odi-nginx', github: 'theodi/chef-odi-nginx'
 cookbook 'quirkafleeg-deployment', github: 'theodi/chef-quirkafleeg-deployment'
 
 cookbook 'mongodb', :github => 'edelight/chef-mongodb'
-#cookbook 'odi-mongodb', github: 'theodi/odi-chef', rel: "site-cookbooks/odi-mongodb"
-cookbook 'odi-mongodb', path: '/home/ldodds/workspaces/theodi/odi-chef/site-cookbooks/odi-mongodb'
+cookbook 'odi-mongodb', github: 'theodi/odi-chef', rel: "site-cookbooks/odi-mongodb"
+#cookbook 'odi-mongodb', path: '/home/ldodds/workspaces/theodi/odi-chef/site-cookbooks/odi-mongodb'
