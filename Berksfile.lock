@@ -8,10 +8,15 @@ DEPENDENCIES
   imagemagick
     git: git://github.com/opscode-cookbooks/imagemagick.git
     revision: 891a842ad71a8dadc5ec6ed4fa564493e71e2bce
+  mongodb
+    git: git://github.com/edelight/chef-mongodb.git
+    revision: 0eb955c50a172958b6719dc3fedfcd65897a19e7
   odi-apt
     git: git://github.com/theodi/odi-chef.git
     revision: bb1f4e7aed83874a0decb07378324085fb83633c
     rel: site-cookbooks/odi-apt
+  odi-mongodb
+    path: ../odi-chef/site-cookbooks/odi-mongodb
   odi-nginx
     git: git://github.com/theodi/chef-odi-nginx.git
     revision: 9639887c7e53663e06efeeefc3deda2d398b206b
@@ -65,8 +70,13 @@ GRAPH
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
   imagemagick (0.2.2)
+  mongodb (0.16.1)
+    apt (>= 1.8.2)
+    python (>= 0.0.0)
+    runit (>= 1.5.0)
+    yum (>= 3.0.0)
   mysql (5.2.12)
-  nginx (2.7.0)
+  nginx (2.7.2)
     apt (~> 2.2)
     bluepill (~> 2.3)
     build-essential (~> 2.0)
@@ -80,6 +90,8 @@ GRAPH
   ntp (1.6.2)
   odi-apt (0.1.0)
     apt (>= 0.0.0)
+  odi-mongodb (0.1.2)
+    mongodb (>= 0.0.0)
   odi-nginx (0.5.0)
   odi-pk (0.1.0)
   odi-quirkafleeg-backend (0.1.0)
@@ -111,6 +123,9 @@ GRAPH
     xml (>= 0.0.0)
   ohai (2.0.0)
   postfix (3.2.0)
+  python (1.4.6)
+    build-essential (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   quirkafleeg-deployment (0.3.0)
     git (>= 0.0.0)
     nginx (>= 0.0.0)

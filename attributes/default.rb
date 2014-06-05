@@ -15,8 +15,12 @@ default.apps.static.port = 4010
 default.apps.static.assets_path = 'static'
 default.apps.static.assets_allow_origin = "*"
 
-default.apps.signonotron2.port = 4000
-default.apps.signonotron2.deploy_name = 'signon'
-default.apps.signonotron2.mysql_db = 'signon'
-default.apps.signonotron2.migrate = 'bundle exec rake db:migrate'
-default.apps.signonotron2.is_default = true
+#default.apps.signonotron2.port = 4000
+#default.apps.signonotron2.deploy_name = 'signon'
+#default.apps.signonotron2.mysql_db = 'signon'
+#default.apps.signonotron2.migrate = 'bundle exec rake db:migrate'
+#default.apps.signonotron2.is_default = true
+
+default.apps['asset-manager'].port = 4050
+default.apps['asset-manager'].mongo_db = 'govuk_content_publisher'
+default.apps['asset-manager'].precompile_assets = false
