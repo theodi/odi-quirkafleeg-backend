@@ -24,3 +24,16 @@ default.apps.static.assets_allow_origin = "*"
 default.apps['asset-manager'].port = 4050
 default.apps['asset-manager'].mongo_db = 'govuk_content_publisher'
 default.apps['asset-manager'].precompile_assets = false
+
+  
+default.apps.panopticon.port = 4020  
+default.apps.panopticon.mongo_db = 'govuk_content_publisher'
+
+default.apps.publisher.port = 4030  
+default.apps.publisher.mongo_db = 'govuk_content_publisher'
+default.apps.publisher.migrate = 'bundle exec rake db:seed'
+
+default.apps.content_api.port = 4040  
+default.apps.content_api.deploy_name = 'contentapi'  
+default.apps.content_api.precompile_assets = false
+default.apps.content_api.mongo_db = 'govuk_content_publisher'

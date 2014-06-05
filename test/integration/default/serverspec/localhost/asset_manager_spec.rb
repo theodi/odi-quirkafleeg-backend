@@ -26,8 +26,6 @@ describe service("asset-manager-thin-1") do
   it { should be_running }
 end
 
-# Check we can actually access the thing - we'll get a Rails error due
-# to lack of database, but that's OK as we know Rails is running.
 describe command("curl -H 'Host: asset-manager.theodi.org' http://localhost:8080/healthcheck") do
   it { should return_stdout /OK/ }
 end
