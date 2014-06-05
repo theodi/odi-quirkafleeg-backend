@@ -28,11 +28,9 @@ end
 # Make sure we have environment correctly
 describe file("/var/www/static/current/.env") do
   its(:content) { should match /GOVUK_APP_DOMAIN: theodi.org/ }
-  its(:content) { should match /SUCH: test/ }
 end
 
 describe file("/etc/init/static-thin-1.conf") do
-  its(:content) { should match /SUCH=test/ }
   its(:content) { should match /PORT=4010/ }
   its(:content) { should match /bundle exec thin start/ }
 end

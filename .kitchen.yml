@@ -11,5 +11,7 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[odi-quirkafleeg-backend::default]
+      - "recipe[odi-quirkafleeg-backend::default]"
+      - "recipe[mongodb::mongodb_org_repo]"
+      - "recipe[odi-mongodb]"      
     attributes:
